@@ -29,7 +29,7 @@ create table if not exists SingerAlbum (
 create table if not exists Song (
 	song_id SERIAL primary key,
 	song_name VARCHAR(100) not null,
-	duration TIME not null,
+	duration INTEGER not null,
 	album_id_song INTEGER references Album(album_id) not null
 );
 
